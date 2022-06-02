@@ -11,7 +11,7 @@
 |
 */
 
-use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Backend\AdminController;
 use App\Http\Controllers\Auth\Admin\ForgotPasswordController;
 use App\Http\Controllers\Auth\Admin\LoginController;
 use App\Http\Controllers\Auth\Admin\ResetPasswordController;

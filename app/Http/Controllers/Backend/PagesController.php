@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Admin as AppAdmin;
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
 use App\Models\Author;
@@ -28,7 +29,7 @@ class PagesController extends Controller
     	$total_categories = count(Category::all());
         $total_Translators = count(Translator::all());
         $total_Users = count(User::all());
-        $total_Admins = count(Admin::all());
+        $total_Admins = count(AppAdmin::all());
         $total_rating=count(Review::all());
 
 

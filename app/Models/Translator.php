@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Translator extends Model
 {
+    public function book()
+    {
+    	return $this->belongsTo(Book::class);
+    }
+
     use HasFactory;
 }

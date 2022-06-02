@@ -2,10 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\Book;
 class Category extends Model
 {
-    use HasFactory;
+    public function parent_category($parent_id)
+    {
+    	$category = Category::find($parent_id);
+    	return $category;
+    }
+
+    public function books()
+    {
+    	return $this->hasMany(Book::class);
+    }
 }

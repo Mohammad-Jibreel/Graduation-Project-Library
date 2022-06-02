@@ -40,13 +40,13 @@
             <a class="collapse-item" href="{{ route('admin.books.unapproved') }}">
               Unapproved Books
               <span class="badge badge-warning">
-                {{ count(App\Book::where('is_approved', 0)->get()) }}
+                {{ count(App\Models\Book::where('is_approved', 0)->get()) }}
               </span>
             </a>
             <a class="collapse-item" href="{{ route('admin.books.approved') }}">
               Approved Books
               <span class="badge badge-success">
-                {{ count(App\Book::where('is_approved', 1)->get()) }}
+                {{ count(App\Models\Book::where('is_approved', 1)->get()) }}
               </span>
             </a>
             <a class="collapse-item" href="{{ route('admin.books.create') }}">Create Book</a>
@@ -81,7 +81,7 @@
             <a class="collapse-item" href="{{ route('admin.user.index') }}">
               Users
               <span class="badge badge-warning">
-                {{ count(App\User::all()) }}
+                {{ count(App\Models\User::all()) }}
               </span>
             </a>
             <a class="collapse-item" href="{{ route('admin.UserAdmin.index') }}">
