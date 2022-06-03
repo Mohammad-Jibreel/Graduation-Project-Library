@@ -110,9 +110,7 @@
                             </form>
                         </div>
 
-              {{-- @include('frontend.pages.books.partials.list')
-              <div class="books-pagination mt-5">
-                {{ $books->links() }} --}}
+
               </div>
 
             </div>

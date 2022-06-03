@@ -78,62 +78,7 @@
             <div class="profile-tab">
 
 
-              {{-- <div class="clearfix"></div> --}}
 
-
-
-{{--
-              <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                <div class="card-header">
-                     <i class="fa fa-book x2"></i>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Approve Book {{$total_approve}}</h5>
-                  <h5 class="card-title">UnApprove Book {{$total_unapprove}}</h5>
-                </div>
-              </div>
-
-
-
-
-              <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                <div class="card-header">
-                    <i class="fa fa-heart x2"></i>
-
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">whislist</h5>
-                  <p class="card-text">{{$total_wishlist}}</p>
-                </div>
-              </div>
-
-
-
-              <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                <div class="card-header">
-                    <i class="fa fa-star x2"></i>
-
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Star Ratings</h5>
-                  <p class="card-text">{{$total_rating}}</p>
-                </div>
-              </div>
-
-
-
-
-
-
-
-{{$total_messages}}
-
-
-
-
-
-
- --}}
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
@@ -223,27 +168,7 @@
             <div class="card l-bg-orange-dark">
                 <div  onclick="location.href='{{ route('chatify') }}'">
 
-                {{-- <div class="card-statistic-3 p-4">
 
-
-                    <div class="card-icon card-icon-large"><i class="fas fa-comment-dots"></i></div>
-                    <div class="mb-4">
-                        <h5 class="card-title mb-0">Chat</h5>
-                    </div>
-                    <div class="row align-items-center mb-2 d-flex">
-                        <div class="col-8">
-                            <h2 class="d-flex align-items-center mb-0">
-                               {{$total_messages}}
-                            </h2>
-                        </div>
-                        <div class="col-4 text-right">
-                            <span><i class="fas fa-comment-dots"></i></span>
-                        </div>
-                    </div>
-                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
-                        <div class="progress-bar l-bg-cyan" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
-                    </div>
-                </div> --}}
             </div>
             </div>
         </div>

@@ -42,11 +42,7 @@
                   <br>
                   <input type="text" class="form-control" name="address" placeholder="Publisher Address">
                 </div>
-                {{-- <div class="col-md-6">
-                  <label for="">Publisher Outlet</label>
-                  <br>
-                  <input type="text" class="form-control" name="outlet" placeholder="Publisher Outlet">
-                </div> --}}
+
                 <div class="col-12">
                   <label for="">Publisher Details</label>
                   <br>

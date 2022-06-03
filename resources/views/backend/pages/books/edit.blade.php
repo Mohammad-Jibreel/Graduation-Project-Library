@@ -49,7 +49,7 @@
                    <select name="author_ids[]" id="author_id" class="form-control select2" multiple>
                     <option value="">Select a author</option>
                     @foreach ($authors as $author)
-                      <option value="{{ $author->id }}" {{ App\Book::isAuthorSelected($book->id, $author->id) ? 'selected' : '' }}>{{ $author->name }}</option>
+                      <option value="{{ $author->id }}" {{ App\Models\Book::isAuthorSelected($book->id, $author->id) ? 'selected' : '' }}>{{ $author->name }}</option>
                     @endforeach
                   </select>
                 </div>
@@ -100,11 +100,6 @@
                   </select>
                 </div>
 
-                {{-- <div class="col-md-6">
-                  <label for="quantity">Book Quantity</label>
-                  <br>
-                  <input type="number" class="form-control" name="quantity" placeholder="Book Quantity" value="{{ $book->quantity }}" required>
-                </div> --}}
 
 
 

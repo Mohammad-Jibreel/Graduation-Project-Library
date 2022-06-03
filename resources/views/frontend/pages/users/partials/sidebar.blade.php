@@ -14,7 +14,7 @@
             Dashboard
           </a>
 
-      <a href="{{ route('users.profile', Auth::user()->username) }}" class="list-group-item list-group-item-action">
+       <a href="{{ route('users.profile', Auth::user()->username) }}" class="list-group-item list-group-item-action">
         Profile
       </a>
 

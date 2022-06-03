@@ -33,7 +33,7 @@ class CreateBooksTable extends Migration
             $table->unsignedInteger('publisher_id')->index();
             $table->unsignedInteger('translator_id')->nullable()->index();
 
-            // $table->integer('qauntity')->default(1);
+            $table->integer('qauntity')->default(1);
             $table->timestamps();
         });
     }

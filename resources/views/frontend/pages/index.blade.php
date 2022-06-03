@@ -130,30 +130,30 @@
           <div class="row counters">
 
             <div class="col-lg-2 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\User::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Models\User::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
               <p>User</p>
             </div>
 
             <div class="col-lg-2 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Book::all())}}" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Models\Book::all())}}" data-purecounter-duration="1" class="purecounter"></span>
               <p>Book</p>
             </div>
 
             <div class="col-lg-2 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Category::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Models\Category::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
               <p>Ctegories</p>
             </div>
 
             <div class="col-lg-2 col-6 text-center">
-              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Publisher::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Models\Publisher::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
               <p>Publisher</p>
             </div>
             <div class="col-lg-2 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Author::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Models\Author::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Authors</p>
               </div>
               <div class="col-lg-2 col-6 text-center">
-                <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Translator::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="{{ count(App\Models\Translator::all()) }}" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Translator</p>
               </div>
 

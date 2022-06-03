@@ -116,17 +116,7 @@
 
                       <a href="#deleteModal{{ $user->id }}" class="btn btn-danger" data-toggle="modal"><i class="fa fa-trash"></i> Delete</a>
 
-                    {{-- @if ($user->status==1)
 
-
-                      <a href="{{route('users.status.update',['user_id'=> $user->id,'status_code'=>0]) }}" class="btn btn-danger" data-toggle="modal"><i class="fas fa-ban"></i>
-
-                      </a>
-                  @else
-                      <a href="{{route('users.status.update',['user_id'=> $user->id,'status_code'=>1]) }}" class="btn btn-success" data-toggle="modal"><i class="fas fa-check"></i></a>
-
-                    </td>
-                    @endif --}}
 
                   </tr>
 

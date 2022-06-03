@@ -3,7 +3,6 @@
 namespace App\Models;
 
 
-use App\BookRequest;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -53,7 +52,7 @@ public function reviews() {
 
 
  public function wishlists() {
-    return $this->hasMany(Wishlist::class);
+    return $this->hasMany(Wishlist::class,'user_id');
 
  }
 
@@ -65,12 +64,5 @@ public function reviews() {
         return $this->hasMany(Book::class);
     }
 
-    public static function bookRequest($book_id)
-    {
-        $book_request = BookRequest::where('user_id', Auth::id())->orderBy('id', 'desc')->where('book_id', $book_id)->first();
-        if (!is_null($book_request)) {
-            return $book_request;
-        }
-        return null;
-    }
+
 }

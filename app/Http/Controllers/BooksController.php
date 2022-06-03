@@ -153,7 +153,6 @@ class BooksController extends Controller
         $book->user_id = Auth::id();
         $book->is_approved = 0;
         $book->isbn = $request->isbn;
-        $book->quantity = 1;
         $book->translator_id = $request->translator_id;
         $book->save();
 

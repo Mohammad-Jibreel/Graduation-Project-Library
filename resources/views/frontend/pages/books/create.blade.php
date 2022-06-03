@@ -107,23 +107,6 @@
 
 
 
-                {{-- <div class="col-md-6">
-                  <label for="translator_id">Book Translator</label>
-                  <br>
-                   <select name="translator_id" id="translator_id" class="form-control select2">
-                    <option value="">Select a translator book</option>
-                    @foreach ($translators as $t)
-                      <option value="{{ $t->id }}">{{ $t->name }}</option>
-                    @endforeach
-                  </select>
-                </div> --}}
-
-                {{-- <div class="col-md-6">
-                  <label for="quantity">Book Quantity</label>
-                    <br>
-                    <input type="number" name="quantity" id="quantity" class="form-control" value="1" required min="1">
-                </div>
- --}}
 
 
                 <div class="col-12">

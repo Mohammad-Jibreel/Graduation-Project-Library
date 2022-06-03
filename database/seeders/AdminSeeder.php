@@ -2,13 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Admin;
+use App\Admin;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
-
-class UserSeed extends Seeder
+class AdminSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,10 +17,13 @@ class UserSeed extends Seeder
     public function run()
     {
         Admin::create([
-            'name' => Str::random(10),
-            'email' => Str::random(10).'@gmail.com',
-            'password' => Hash::make('password'),
-
+        'name' => 'Admin',
+        'username'=>'admin25',
+        'phone_no'=>'0788307467',
+        'email' => 'admin@gmail.com',
+        'password' => Hash::make('admin12345$'),
         ]);
+
+
     }
 }

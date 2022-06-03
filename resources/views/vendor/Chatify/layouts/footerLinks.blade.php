@@ -13,11 +13,5 @@
         }
     }
   });
-
-    // Bellow are all the methods/variables that using php to assign globally.
-    const allowedImages = {!! json_encode(config('chatify.attachments.allowed_images')) !!} || [];
-    const allowedFiles = {!! json_encode(config('chatify.attachments.allowed_files')) !!} || [];
-    const getAllowedExtensions = [...allowedImages, ...allowedFiles];
-    const getMaxUploadSize = {{ Chatify::getMaxUploadSize() }};
 </script>
 <script src="{{ asset('js/chatify/code.js') }}"></script>

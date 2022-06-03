@@ -35,8 +35,9 @@ use Illuminate\Support\Facades\Route;
 
 
 use Illuminate\Support\Facades\Auth;
-
 Route::get('/', [PagesController::class,'index'])->name('index');
+
+Route::get('/home', [PagesController::class,'index'])->name('index');
 
 Route::get('/books', [BooksController::class,'index'])->name('books.index');
 Route::get('/books/search',[BooksController::class,'search'])->name('books.search');
@@ -148,13 +149,7 @@ Route::group(['prefix' => 'admin'], function(){
 		Route::post('/delete/{id}',[PublishersController::class,'destroy'])->name('admin.publishers.delete');
 
 	});
-    Route::group(['prefix' => 'Translators'], function(){
-		Route::get('/', [TranslatorsController::class,'index'])->name('admin.Translators.index');
-		Route::post('/store',[TranslatorsController::class,'store'])->name('admin.Translators.store');
-		Route::get('/{id}',[TranslatorsController::class,'show'] )->name('admin.Translators.show');
-		Route::post('/update/{id}',[TranslatorsController::class,'update'])->name('admin.Translators.update');
-		Route::post('/delete/{id}', [TranslatorsController::class,'destroy'])->name('admin.Translators.delete');
-	});
+
 
     Route::group(['prefix' => 'user'], function(){
 		Route::get('/', [UserController::class,'index'])->name('admin.user.index');
@@ -173,8 +168,6 @@ Route::group(['prefix' => 'admin'], function(){
 });
 
 Auth::routes(['verify' => true]);
-
-Route::get('/home', [HomeController::class,'index'])->name('home');
 
 Route::post('add-rating',[RatingController::class,'store'])->name('addRating');
 Route::post('update-rating/{id}',[RatingController::class,'update'])->name('updateRating');
